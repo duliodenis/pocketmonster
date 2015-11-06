@@ -1,2 +1,8 @@
-# pocketmonster
-An iOS 9 tamagotchi digital pet monster written in Swift 2. 
+# Pocket Monster
+An iOS 9 [tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi) digital pet monster written in Swift 2. 
+
+### Licensing
+Pocket Monster is licensed under [the MIT License](https://github.com/duliodenis/pocketmonster/blob/master/LICENSE).
+
+### Support or Contact
+Visit [ddApps.co](http://ddapps.co) to see more.
