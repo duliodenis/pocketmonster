@@ -70,7 +70,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle 1" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-dW-Jrf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-dW-Jrf">
                                 <rect key="frame" x="57" y="248" width="586" height="309"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="586" id="uJl-xh-VGJ"/>
@@ -103,6 +103,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="monsterImage" destination="LSS-dW-Jrf" id="ZhU-y2-U6N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +117,7 @@
         <image name="food" width="95" height="98"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>
-        <image name="idle 1" width="889" height="615"/>
+        <image name="idle1" width="889" height="615"/>
         <image name="livespanel" width="468" height="137"/>
         <image name="skull" width="95" height="98"/>
     </resources>
