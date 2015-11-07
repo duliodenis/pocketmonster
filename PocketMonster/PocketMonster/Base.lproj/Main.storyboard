@@ -66,7 +66,7 @@
                                     <rect key="frame" x="205" y="-46" width="182" height="50"/>
                                 </variation>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-dW-Jrf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-dW-Jrf" customClass="MonsterImage" customModule="PocketMonster" customModuleProvider="target">
                                 <rect key="frame" x="57" y="248" width="586" height="309"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="586" id="uJl-xh-VGJ"/>
@@ -76,10 +76,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Wgc-me-vh1">
                                 <rect key="frame" x="166" y="116" width="260" height="98"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="S88-pr-6Yj">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="S88-pr-6Yj" customClass="DragImage" customModule="PocketMonster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="1TR-I2-mjT">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="1TR-I2-mjT" customClass="DragImage" customModule="PocketMonster" customModuleProvider="target">
                                         <rect key="frame" x="165" y="0.0" width="95" height="98"/>
                                     </imageView>
                                 </subviews>
@@ -149,7 +149,12 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImage" destination="1TR-I2-mjT" id="eyu-Vv-c34"/>
+                        <outlet property="heartImage" destination="S88-pr-6Yj" id="Gvi-Yc-zIY"/>
                         <outlet property="monsterImage" destination="LSS-dW-Jrf" id="ZhU-y2-U6N"/>
+                        <outlet property="penalty1Image" destination="mO7-9x-c9H" id="vQa-uf-Jic"/>
+                        <outlet property="penalty2Image" destination="Uqp-a4-auE" id="UMs-bx-Y6B"/>
+                        <outlet property="penalty3Image" destination="VDd-LJ-Jvg" id="Xtb-Ve-yen"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
